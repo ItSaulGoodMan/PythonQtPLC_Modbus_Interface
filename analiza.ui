@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1036</width>
+    <height>1591</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #15202b;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+color:white;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light Condensed</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+border-radius:10px;
+color: white;
+background-color: #374485}
+QPushButton::hover{
+border-radius:10px;
+color: white;
+ background-color: #667cf6;}
+</string>
+       </property>
+       <property name="text">
+        <string>Refresh database</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+border-radius:10px;
+color: white;
+background-color: #374485}
+QPushButton::hover{
+border-radius:10px;
+color: white;
+ background-color: #667cf6;}
+</string>
+       </property>
+       <property name="text">
+        <string>Delete database</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="7" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Chose Mistake</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Smetnje zatezanja trake</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Preteze uze desno</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Preteze uze lijevo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bocno skretanje rep</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bocno skretanje pog. stanica</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Preopterecenje bimetal M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Preopterecenje bimetal M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pregaranje osig. M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pregaranje osig. M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Grij. rez. red M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Grij.nam M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Grij. lez M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Grij. nam M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SF6 gas M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SF6 gas M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Zapunjenje kosa</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Not pogon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Not kljuc</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Proklizavanje</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Krajnji vrata M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Krajnji vrata M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Greska Kocnice sig</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="2">
+    <widget class="QTableView" name="tableView_2">
+     <property name="minimumSize">
+      <size>
+       <width>500</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white ;
+background-color: #22303c;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QTableView" name="tableView">
+     <property name="minimumSize">
+      <size>
+       <width>500</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QHeaderView::section { background-color:red }</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <family>Bahnschrift Light Condensed</family>
+       <pointsize>13</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:10px;
+
+color: white;
+background-color: #192734
+</string>
+     </property>
+     <property name="text">
+      <string>Chose mistake</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <family>Bahnschrift Light Condensed</family>
+       <pointsize>13</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:10px;
+
+color: white;
+background-color: #192734
+</string>
+     </property>
+     <property name="text">
+      <string>Mistakes by date</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Choose period</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dateTimeEdit">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dateTimeEdit_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>30</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+border-radius:10px;
+color: white;
+background-color: #374485}
+QPushButton::hover{
+border-radius:10px;
+color: white;
+ background-color: #667cf6;}
+</string>
+       </property>
+       <property name="text">
+        <string>Confirm</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift Condensed</family>
+       <pointsize>36</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white ;
+background-color: #22303c;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);</string>
+     </property>
+     <property name="text">
+      <string>ANALYSIS </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <family>Bahnschrift Light Condensed</family>
+       <pointsize>13</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:10px;
+
+color: white;
+background-color: #192734
+</string>
+     </property>
+     <property name="text">
+      <string>All mistakes</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>130</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift Condensed</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border-radius: 20px; background-color: #47a1eb;}
+QPushButton::hover{
+ border-radius: 20px; background-color: #47d1eb;}
+</string>
+     </property>
+     <property name="text">
+      <string>GO BACK</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QTableView" name="tableView_3">
+     <property name="minimumSize">
+      <size>
+       <width>500</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white ;
+background-color: #22303c;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="3">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="7" column="2">
+    <widget class="QLabel" name="label_6">
+     <property name="font">
+      <font>
+       <family>Myanmar Text</family>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

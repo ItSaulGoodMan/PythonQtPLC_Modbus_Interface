@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>873</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>PLC MANAGER</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #15202b;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+color:white;</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>35</number>
+      </property>
+      <property name="rightMargin">
+       <number>670</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+ border-radius: 20px; background-color: #47a1eb;}
+QPushButton::hover{
+ border-radius: 20px; background-color: #47d1eb;}
+</string>
+        </property>
+        <property name="text">
+         <string>GO BACK</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>86</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>44</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:25px;
+
+color: white;
+background-color: #192734
+</string>
+      </property>
+      <property name="text">
+       <string>CHOOSE UNIT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>176</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>47</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white ;
+background-color: #22303c;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);</string>
+      </property>
+      <property name="text">
+       <string>WELCOME TO PLC MANAGER CLIENT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>207</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Light</family>
+          <pointsize>31</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+border-radius:30px;
+color: white;
+background-color: #8899a6}
+QPushButton::hover{
+border-radius:30px;
+color: white;
+ background-color: #8881e0;}
+</string>
+        </property>
+        <property name="text">
+         <string>CONVEYOR 1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>207</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Light</family>
+          <pointsize>31</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+border-radius:30px;
+color: white;
+background-color: #8899a6}
+QPushButton::hover{
+border-radius:30px;
+color: white;
+ background-color: #8881e0;}
+</string>
+        </property>
+        <property name="text">
+         <string>CONVEYOR 2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>207</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Light</family>
+          <pointsize>31</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+border-radius:30px;
+color: white;
+background-color: #8899a6}
+QPushButton::hover{
+border-radius:30px;
+color: white;
+ background-color: #8881e0;}
+</string>
+        </property>
+        <property name="text">
+         <string>CRUSHER</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="5" column="0">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>873</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actioncon"/>
+   </widget>
+   <addaction name="menuSettings"/>
+  </widget>
+  <action name="actioncon">
+   <property name="text">
+    <string>Server Connection</string>
+   </property>
+   <property name="statusTip">
+    <string>Connect to a MQTT broker</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
